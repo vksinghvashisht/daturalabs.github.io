@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ── PRIMARY META ───────────────────────────────────────── -->
+  <title>Why I Fired Goldman Sachs — VK Singh Vashisht</title>
+  <meta name="description" content="VK Singh Vashisht on leaving Goldman Sachs private banking, building a single-client family office, and what institutional wealth management actually sells you versus what it delivers.">
+  <meta name="author" content="VK Singh Vashisht">
+  <link rel="canonical" href="https://daturalabs.com/writing/why-i-fired-goldman-sachs.html">
+
+  <!-- ── OPEN GRAPH ─────────────────────────────────────────── -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://daturalabs.com/writing/why-i-fired-goldman-sachs.html">
+  <meta property="og:title" content="Why I Fired Goldman Sachs — VK Singh Vashisht">
+  <meta property="og:description" content="What Goldman Sachs private banking actually sells you, what it costs, and what I built instead when I walked out.">
+  <meta property="og:site_name" content="Datura Labs">
+
+  <!-- ── JSON-LD: ARTICLE ───────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://daturalabs.com/writing/why-i-fired-goldman-sachs.html",
+    "headline": "Why I Fired Goldman Sachs",
+    "description": "What Goldman Sachs private banking actually sells you, what it costs, and what I built instead when I walked out.",
+    "author": {
+      "@type": "Person",
+      "@id": "https://daturalabs.com/#vk",
+      "name": "VK Singh Vashisht",
+      "url": "https://daturalabs.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://daturalabs.com/#org",
+      "name": "Datura Labs"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://daturalabs.com/writing/why-i-fired-goldman-sachs.html"
+    },
+    "about": [
+      {"@type": "Thing", "name": "Goldman Sachs Private Banking"},
+      {"@type": "Thing", "name": "Family Office"},
+      {"@type": "Thing", "name": "Wealth Management"},
+      {"@type": "Thing", "name": "Investment Management Fees"}
+    ],
+    "keywords": "Goldman Sachs, private banking, family office, wealth management, VK Singh Vashisht, Datura Labs, investment fees, institutional banking"
+  }
+  </script>
+
+  <!-- ── JSON-LD: FAQ (article-specific AEO) ───────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why would someone leave Goldman Sachs private banking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Goldman Sachs private banking is designed around asset retention and fee generation, not client wealth creation. For families who can build the analytical infrastructure themselves, the value proposition disappears. What you are paying for is the Goldman brand, relationship access, and managed complexity — not necessarily superior returns or alignment of interests. A single-client family office structure eliminates the fee layer and creates direct alignment between the manager and the capital."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does Goldman Sachs private banking actually cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Goldman Sachs private banking fees vary by asset level and product mix, but typically include advisory fees, product management fees, and transaction costs. For families with $10M+ in managed assets, the all-in cost including fund fees, advisory fees, and embedded product costs can run 1-2%+ of AUM annually. On a $20M portfolio, that is $200,000-$400,000 per year in fees, compounding for decades."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you replace Goldman Sachs with a family office?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A single-client family office replaces institutional private banking by internalizing the investment management, deal sourcing, and analytical functions. The minimum viable family office requires a clear investment policy statement, direct custody of assets, access to legal and tax counsel, and a framework for evaluating opportunities. Modern AI tools have dramatically reduced the cost of building the analytical layer that institutions previously charged premium fees to provide."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Tenor+Sans&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:        #0B0B09;
+      --bg2:       #131310;
+      --bg3:       #1C1C18;
+      --border:    #2E2E28;
+      --gold:      #C4965A;
+      --gold-dim:  #7A5A32;
+      --text:      #E2DDD4;
+      --text-dim:  #8A857A;
+      --text-faint:#4A4740;
+      --serif:     'Cormorant Garamond', Georgia, serif;
+      --sans:      'DM Sans', sans-serif;
+      --tenor:     'Tenor Sans', sans-serif;
+      --max-prose: 680px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ──────────────────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      height: 64px;
+      background: rgba(11,11,9,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      font-family: var(--tenor);
+      font-size: 13px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--gold); }
+
+    .nav-back {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--gold); }
+
+    /* ── ARTICLE HEADER ───────────────────────────────────── */
+    .article-header {
+      padding: 120px 48px 64px;
+      max-width: 1100px;
+      margin: 0 auto;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .article-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .article-tag {
+      font-family: var(--tenor);
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .article-tag-sep {
+      width: 32px;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .article-date {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: var(--text-faint);
+    }
+
+    h1.article-title {
+      font-family: var(--serif);
+      font-size: clamp(40px, 6vw, 72px);
+      font-weight: 300;
+      line-height: 1.08;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      max-width: var(--max-prose);
+      margin-bottom: 32px;
+    }
+
+    .article-dek {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--text-dim);
+      max-width: var(--max-prose);
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .article-author {
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    .article-author strong {
+      color: var(--text);
+      font-weight: 400;
+    }
+
+    .article-read {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: var(--text-faint);
+      text-transform: uppercase;
+    }
+
+    /* ── ARTICLE BODY ─────────────────────────────────────── */
+    .article-body {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 72px 48px;
+      display: grid;
+      grid-template-columns: var(--max-prose) 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .prose {}
+
+    .prose p {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.85;
+      margin-bottom: 28px;
+    }
+
+    .prose p strong {
+      color: var(--text);
+      font-weight: 400;
+    }
+
+    .prose p em {
+      color: var(--text);
+      font-style: italic;
+    }
+
+    .prose h2 {
+      font-family: var(--serif);
+      font-size: 32px;
+      font-weight: 300;
+      color: var(--text);
+      line-height: 1.2;
+      margin-top: 64px;
+      margin-bottom: 28px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+
+    .prose h3 {
+      font-family: var(--tenor);
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+
+    .prose blockquote {
+      border-left: 2px solid var(--gold);
+      margin: 40px 0;
+      padding: 4px 0 4px 32px;
+    }
+
+    .prose blockquote p {
+      font-size: 24px;
+      font-style: italic;
+      color: var(--text);
+      margin-bottom: 0;
+    }
+
+    /* ── SIDEBAR ──────────────────────────────────────────── */
+    .article-sidebar {
+      position: sticky;
+      top: 96px;
+    }
+
+    .sidebar-section {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+    }
+    .sidebar-section:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar-label {
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .sidebar-item {
+      margin-bottom: 12px;
+    }
+
+    .sidebar-item-title {
+      font-family: var(--serif);
+      font-size: 15px;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+
+    .sidebar-item-sub {
+      font-size: 11px;
+      color: var(--text-faint);
+    }
+
+    .sidebar-link {
+      display: block;
+      font-family: var(--serif);
+      font-size: 16px;
+      color: var(--text-dim);
+      text-decoration: none;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s;
+      line-height: 1.4;
+    }
+    .sidebar-link:hover { color: var(--gold); }
+    .sidebar-link span {
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* ── FOOTER ───────────────────────────────────────────── */
+    .article-footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-logo {
+      font-family: var(--tenor);
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+    }
+    .footer-logo span { color: var(--gold-dim); }
+
+    .footer-note {
+      font-size: 11px;
+      color: var(--text-faint);
+    }
+
+    @media (max-width: 900px) {
+      nav { padding: 0 24px; }
+      .article-header { padding: 100px 24px 48px; }
+      .article-body { grid-template-columns: 1fr; padding: 48px 24px; gap: 48px; }
+      .article-sidebar { position: static; }
+      .article-footer { padding: 32px 24px; flex-direction: column; gap: 16px; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="nav-logo">Datura <span>Labs</span></a>
+    <a href="/#writing" class="nav-back">
+      ← All writing
+    </a>
+  </nav>
+
+  <!-- ARTICLE HEADER -->
+  <header class="article-header">
+    <div class="article-eyebrow">
+      <span class="article-tag">Finance · Personal · Family Office</span>
+      <div class="article-tag-sep"></div>
+      <span class="article-date">February 2026</span>
+    </div>
+
+    <h1 class="article-title">Why I Fired Goldman Sachs</h1>
+
+    <p class="article-dek">
+      Twelve years of capital formation. One conversation that ended it. 
+      What private banking actually sells, what it actually costs, 
+      and what I built when I decided I didn't need it anymore.
+    </p>
+
+    <div class="article-meta">
+      <div class="article-author">By <strong>VK Singh Vashisht</strong></div>
+      <div class="article-read">14 min read</div>
+    </div>
+  </header>
+
+  <!-- ARTICLE BODY -->
+  <main>
+  <div class="article-body">
+
+    <article class="prose" itemscope itemtype="https://schema.org/Article">
+      <meta itemprop="headline" content="Why I Fired Goldman Sachs">
+      <meta itemprop="author" content="VK Singh Vashisht">
+      <meta itemprop="datePublished" content="2026-02-01">
+
+      <p>
+        There is a chapter in the Gospel of Matthew — chapter 21, verse 13 — where Jesus walks into the temple in Jerusalem, finds it full of moneychangers and merchants, overturns their tables, and says: <em>"My house shall be called a house of prayer, but you have made it a den of thieves."</em>
+      </p>
+
+      <p>
+        I think about that scene every time someone asks me why I left Goldman Sachs.
+      </p>
+
+      <p>
+        Private banking is supposed to be about stewardship. About counsel. About sitting across from someone who understands your capital, your family, and your long-term interests, and helping you protect and grow what took a lifetime to build. That is what Goldman sells. That is the story in every piece of marketing they put in front of you, in every meeting at their offices, in every leather-bound presentation deck.
+      </p>
+
+      <p>
+        What Goldman actually delivers is access to Goldman. The brand. The Rolodex. The sense that you are inside something exclusive and important. And in exchange for that feeling — for that particular form of institutional prestige — you pay a fee that compounds quietly against your net worth for years, sometimes for decades, and is almost never interrogated.
+      </p>
+
+      <p>
+        I interrogated it. That is what ended the relationship.
+      </p>
+
+      <h2>The Math Nobody Wants to Do</h2>
+
+      <p>
+        The first thing you notice, if you are paying attention, is that there is no single fee. There is an advisory fee, a management fee on each product, embedded costs inside the structured products they recommend, transaction fees when they move you in and out of positions, and then the tax drag from the way those positions are structured. 
+      </p>
+
+      <p>
+        Add them up. Do the actual math. On a portfolio of reasonable size — say $15 to $25 million — the all-in cost, when you count every layer, is often between one and two percent of assets per year. Sometimes more.
+      </p>
+
+      <p>
+        That sounds like a small number. One percent. But one percent of $20 million is $200,000 per year. Compounded over ten years, at even a modest return, the fee drag is not a rounding error. It is a second home. It is a business. It is a material part of your family's financial future, quietly extracted every year for a service that, at its core, involves putting your money into products that Goldman's product team has already approved for distribution.
+      </p>
+
+      <p>
+        The fee conversation is the conversation Goldman is very good at not having. They are expert at shifting the discussion to performance, to access, to the complexity of what they manage on your behalf — all of which serves to make the fee feel not just justified but small. That is not an accident. That is design.
+      </p>
+
+      <blockquote>
+        <p>The fee conversation is the conversation Goldman is very good at not having.</p>
+      </blockquote>
+
+      <h2>What the Relationship Actually Is</h2>
+
+      <p>
+        I ran my family's natural gas operations for twelve years, from 2010 through 2022. That was not an easy time to be in natural gas. Gas prices were historically bad for most of that stretch. We survived because we understood our business — the actual economics, the actual risk, the actual levers — at a level that no outside advisor ever could.
+      </p>
+
+      <p>
+        When I moved into investment management after exiting the gas business, I brought the same instinct: understand the machine. Don't outsource the understanding. The outsourcing is where the margin goes — yours.
+      </p>
+
+      <p>
+        What I found, when I looked closely at the Goldman relationship, was that the machine was not designed for my interests. It was designed for Goldman's interests. The products they recommended most consistently were Goldman products. The deal flow they showed me first was deal flow where Goldman had a fee. The advice they gave me on timing — when to sell, when to hold, when to move capital — served Goldman's book as much as mine.
+      </p>
+
+      <p>
+        None of this is uniquely Goldman. Every large wealth management institution operates this way because that is the business model. The model is asset retention and fee generation, dressed up as counsel and stewardship. Understanding this is not cynicism. It is just reading the incentive structure.
+      </p>
+
+      <h2>The Conversation That Ended It</h2>
+
+      <p>
+        There was a specific meeting. I will not tell you exactly when it was or who was in the room, because that is not the point. The point is what happened in the meeting.
+      </p>
+
+      <p>
+        I had been building — quietly, on my own — the capability to evaluate deals and manage capital directly. I had the legal structure in place: a single-client family office operating through a trust structure, which by statute does not require SEC registration as a registered investment adviser. I had the analytical tools. I had the frameworks. I had done the homework.
+      </p>
+
+      <p>
+        In this meeting, I asked a direct question about a specific allocation decision — why this product, why now, why this structure. The answer I got was fluent and professional and completely empty of actual reasoning. It was the answer of someone whose job is to retain assets, not to generate them.
+      </p>
+
+      <p>
+        I realized, sitting in that meeting, that I was not talking to a counselor. I was talking to a salesperson. A sophisticated one. A well-dressed one operating in a very expensive building. But a salesperson.
+      </p>
+
+      <p>
+        I walked out and started the transition.
+      </p>
+
+      <h2>What I Built Instead</h2>
+
+      <p>
+        The single-client family office structure is not complicated, but most people don't know it exists or don't understand that it is accessible to them. If you are managing capital for a single family — your family — you do not need a registered investment adviser. You operate through a trust or an LLC, you maintain direct custody of assets, and you make your own decisions.
+      </p>
+
+      <p>
+        The capability that Goldman was charging me for is, in large part, now available through AI. The analytical layer — the deal screening, the market research, the due diligence structuring, the comparable analysis — can be built in-house, on frontier models, for a fraction of what institutions charge to provide it. This is not a future state. It is the current state. I built it. It works.
+      </p>
+
+      <p>
+        The things that Goldman actually does well — and I will be fair: there are some — are network access, certain proprietary deal flow, and specific structured products that are genuinely difficult to access independently. If those things are valuable to you, the relationship may still make sense. But you should be paying for those specific things, explicitly, with full awareness of the cost. Not a bundled fee that obscures what you are actually receiving.
+      </p>
+
+      <p>
+        My framework for evaluating everything I look at now is what I call the <strong>Maya Framework</strong> — named for the Sanskrit concept of maya, meaning illusion. Most of what institutional wealth management sells you is maya: it looks like value, it has the aesthetics of expertise, but it does not compound in your favor the way the fees compound against you.
+      </p>
+
+      <h2>The Part Nobody Talks About</h2>
+
+      <p>
+        The hardest part of leaving Goldman — the part nobody talks about — is not the financial transition. It is the identity transition.
+      </p>
+
+      <p>
+        Goldman Sachs is a status signal. Being a Goldman private banking client means something in the rooms where that kind of thing is tracked. Walking away from it means walking away from that signal. And for a lot of people — especially people who have worked very hard to accumulate the capital that gets them in the door in the first place — that signal feels important. Feels earned. Feels like the point.
+      </p>
+
+      <p>
+        It is maya. 
+      </p>
+
+      <p>
+        The point is not being Goldman's client. The point is having capital that works for your family, on your terms, compounding in your direction. The brand is not the return. The brand is the fee.
+      </p>
+
+      <p>
+        I do not miss the meetings. I do not miss the presentations. I do not miss the fee drag. I miss nothing about the arrangement except, occasionally, a very good steak at their expense.
+      </p>
+
+      <p>
+        If you are thinking about making a similar move: do the math first. All of it. Then make the decision with your eyes open.
+      </p>
+
+      <p>
+        That is all I did.
+      </p>
+
+      <hr style="border:none; border-top: 1px solid #2E2E28; margin: 56px 0 40px;">
+
+      <p style="font-size: 14px; color: #4A4740; font-family: 'DM Sans', sans-serif; line-height: 1.6;">
+        VK Singh Vashisht is the founder of Datura Labs LLC, a family office and venture studio based in Los Angeles. He writes on distressed capital, AI infrastructure, and investment frameworks at daturalabs.com. Questions: <a href="mailto:vk@daturalabs.com" style="color: #C4965A; text-decoration: none;">vk@daturalabs.com</a>
+      </p>
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="article-sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-label">In This Essay</div>
+        <div style="display: flex; flex-direction: column; gap: 0;">
+          <a href="#" class="sidebar-link" onclick="return false;">
+            <span>Section 01</span>
+            The Math Nobody Wants to Do
+          </a>
+          <a href="#" class="sidebar-link" onclick="return false;">
+            <span>Section 02</span>
+            What the Relationship Actually Is
+          </a>
+          <a href="#" class="sidebar-link" onclick="return false;">
+            <span>Section 03</span>
+            The Conversation That Ended It
+          </a>
+          <a href="#" class="sidebar-link" onclick="return false;">
+            <span>Section 04</span>
+            What I Built Instead
+          </a>
+          <a href="#" class="sidebar-link" onclick="return false;">
+            <span>Section 05</span>
+            The Part Nobody Talks About
+          </a>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Related Reading</div>
+        <a href="/writing/the-maya-framework.html" class="sidebar-link">
+          <span>Framework</span>
+          The Maya Framework: Screening for Real Value
+        </a>
+        <a href="/writing/what-family-offices-are-missing.html" class="sidebar-link">
+          <span>Family Office</span>
+          What Family Offices Are Getting Wrong About AI
+        </a>
+        <a href="/writing/distressed-capital-patient-capital.html" class="sidebar-link">
+          <span>Thesis</span>
+          Distressed Capital Is Patient Capital. Everything Else Is Tourism.
+        </a>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Contact</div>
+        <p style="font-size: 13px; color: var(--text-faint); line-height: 1.6; margin-bottom: 12px;">
+          If this resonated and you are considering a similar transition, email me directly.
+        </p>
+        <a href="mailto:vk@daturalabs.com" style="font-family: var(--tenor); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-dim); padding-bottom: 2px;">
+          vk@daturalabs.com
+        </a>
+      </div>
+    </aside>
+
+  </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="article-footer">
+    <div class="footer-logo">Datura <span>Labs</span> — Los Angeles</div>
+    <div class="footer-note">© 2026 VK Singh Vashisht · <a href="/" style="color: inherit; text-decoration: none;">daturalabs.com</a></div>
+  </footer>
+
+</body>
+</html>

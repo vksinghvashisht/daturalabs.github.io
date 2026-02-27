@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--
+  ══════════════════════════════════════════════════════════
+  DATURA LABS — ARTICLE TEMPLATE
+  To publish a new essay:
+  1. Replace all [BRACKETED VALUES] below
+  2. Write your prose inside <article class="prose">
+  3. Save as: writing/your-essay-slug.html
+  4. Add link to index.html essay list
+  ══════════════════════════════════════════════════════════
+  -->
+
+  <!-- ── PRIMARY META ───────────────────────────────────────── -->
+  <title>[ESSAY TITLE] — VK Singh Vashisht</title>
+  <meta name="description" content="[150-160 character description of the essay — this is what AI engines and search results show]">
+  <meta name="author" content="VK Singh Vashisht">
+  <link rel="canonical" href="https://daturalabs.com/writing/[ESSAY-SLUG].html">
+
+  <!-- ── OPEN GRAPH ─────────────────────────────────────────── -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://daturalabs.com/writing/[ESSAY-SLUG].html">
+  <meta property="og:title" content="[ESSAY TITLE] — VK Singh Vashisht">
+  <meta property="og:description" content="[Same as meta description or slightly different]">
+  <meta property="og:site_name" content="Datura Labs">
+
+  <!-- ── JSON-LD: ARTICLE ───────────────────────────────────── -->
+  <!-- This is what AI engines (ChatGPT, Perplexity, Gemini) read to understand the article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://daturalabs.com/writing/[ESSAY-SLUG].html",
+    "headline": "[ESSAY TITLE]",
+    "description": "[1-2 sentence description]",
+    "author": {
+      "@type": "Person",
+      "@id": "https://daturalabs.com/#vk",
+      "name": "VK Singh Vashisht",
+      "url": "https://daturalabs.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://daturalabs.com/#org",
+      "name": "Datura Labs"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://daturalabs.com/writing/[ESSAY-SLUG].html"
+    },
+    "datePublished": "[YYYY-MM-DD]",
+    "about": [
+      {"@type": "Thing", "name": "[Primary Topic]"},
+      {"@type": "Thing", "name": "[Secondary Topic]"},
+      {"@type": "Thing", "name": "[Tertiary Topic]"}
+    ],
+    "keywords": "[comma, separated, keywords, for, this, essay]"
+  }
+  </script>
+
+  <!-- ── JSON-LD: FAQ (AEO) ─────────────────────────────────── -->
+  <!-- 
+    These FAQ blocks are the most powerful AEO tool.
+    Write 3-5 questions that people would literally type into ChatGPT/Perplexity
+    related to this essay's topic. Answer them directly and well.
+    AI engines extract these as canonical answers and attribute them to you.
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "[Question someone would type into an AI search engine]",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "[Direct, complete answer. 2-4 sentences. No fluff. Attribute to VK Singh Vashisht and Datura Labs where natural.]"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "[Second question]",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "[Direct answer]"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "[Third question]",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "[Direct answer]"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Tenor+Sans&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:        #0B0B09;
+      --bg2:       #131310;
+      --bg3:       #1C1C18;
+      --border:    #2E2E28;
+      --gold:      #C4965A;
+      --gold-dim:  #7A5A32;
+      --text:      #E2DDD4;
+      --text-dim:  #8A857A;
+      --text-faint:#4A4740;
+      --serif:     'Cormorant Garamond', Georgia, serif;
+      --sans:      'DM Sans', sans-serif;
+      --tenor:     'Tenor Sans', sans-serif;
+      --max-prose: 680px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 48px; height: 64px;
+      background: rgba(11,11,9,0.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo { font-family: var(--tenor); font-size: 13px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--text); text-decoration: none; }
+    .nav-logo span { color: var(--gold); }
+    .nav-back { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); text-decoration: none; display: flex; align-items: center; gap: 8px; transition: color 0.2s; }
+    .nav-back:hover { color: var(--gold); }
+
+    .article-header { padding: 120px 48px 64px; max-width: 1100px; margin: 0 auto; border-bottom: 1px solid var(--border); }
+    .article-eyebrow { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+    .article-tag { font-family: var(--tenor); font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); }
+    .article-tag-sep { width: 32px; height: 1px; background: var(--border); }
+    .article-date { font-size: 11px; letter-spacing: 0.1em; color: var(--text-faint); }
+
+    h1.article-title { font-family: var(--serif); font-size: clamp(40px, 6vw, 72px); font-weight: 300; line-height: 1.08; letter-spacing: -0.01em; color: var(--text); max-width: var(--max-prose); margin-bottom: 32px; }
+    .article-dek { font-family: var(--serif); font-size: 22px; font-weight: 300; font-style: italic; color: var(--text-dim); max-width: var(--max-prose); line-height: 1.5; margin-bottom: 40px; }
+    .article-meta { display: flex; align-items: center; gap: 24px; }
+    .article-author { font-size: 13px; color: var(--text-dim); }
+    .article-author strong { color: var(--text); font-weight: 400; }
+    .article-read { font-size: 11px; letter-spacing: 0.1em; color: var(--text-faint); text-transform: uppercase; }
+
+    .article-body { max-width: 1100px; margin: 0 auto; padding: 72px 48px; display: grid; grid-template-columns: var(--max-prose) 1fr; gap: 80px; align-items: start; }
+
+    /* ── PROSE STYLES ─────────────────────────────────────── */
+    .prose p { font-family: var(--serif); font-size: 20px; font-weight: 300; color: var(--text-dim); line-height: 1.85; margin-bottom: 28px; }
+    .prose p strong { color: var(--text); font-weight: 400; }
+    .prose p em { color: var(--text); font-style: italic; }
+    .prose h2 { font-family: var(--serif); font-size: 32px; font-weight: 300; color: var(--text); line-height: 1.2; margin-top: 64px; margin-bottom: 28px; padding-top: 40px; border-top: 1px solid var(--border); }
+    .prose h3 { font-family: var(--tenor); font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-top: 40px; margin-bottom: 16px; }
+    .prose blockquote { border-left: 2px solid var(--gold); margin: 40px 0; padding: 4px 0 4px 32px; }
+    .prose blockquote p { font-size: 24px; font-style: italic; color: var(--text); margin-bottom: 0; }
+    .prose ul { margin: 0 0 28px 0; padding-left: 0; list-style: none; }
+    .prose ul li { font-family: var(--serif); font-size: 19px; font-weight: 300; color: var(--text-dim); line-height: 1.7; padding: 8px 0 8px 24px; border-bottom: 1px solid var(--border); position: relative; }
+    .prose ul li::before { content: '—'; position: absolute; left: 0; color: var(--gold-dim); }
+    .prose .author-bio { font-size: 14px; color: var(--text-faint); font-family: var(--sans); line-height: 1.6; margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--border); }
+    .prose .author-bio a { color: var(--gold); text-decoration: none; }
+
+    /* ── SIDEBAR ──────────────────────────────────────────── */
+    .article-sidebar { position: sticky; top: 96px; }
+    .sidebar-section { margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--border); }
+    .sidebar-section:last-child { border-bottom: none; }
+    .sidebar-label { font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+    .sidebar-link { display: block; font-family: var(--serif); font-size: 16px; color: var(--text-dim); text-decoration: none; padding: 12px 0; border-bottom: 1px solid var(--border); transition: color 0.2s; line-height: 1.4; }
+    .sidebar-link:hover { color: var(--gold); }
+    .sidebar-link span { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-faint); display: block; margin-bottom: 4px; }
+
+    footer { border-top: 1px solid var(--border); padding: 40px 48px; display: flex; align-items: center; justify-content: space-between; }
+    .footer-logo { font-family: var(--tenor); font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-faint); }
+    .footer-logo span { color: var(--gold-dim); }
+    .footer-note { font-size: 11px; color: var(--text-faint); }
+
+    @media (max-width: 900px) {
+      nav { padding: 0 24px; }
+      .article-header { padding: 100px 24px 48px; }
+      .article-body { grid-template-columns: 1fr; padding: 48px 24px; gap: 48px; }
+      .article-sidebar { position: static; }
+      footer { padding: 32px 24px; flex-direction: column; gap: 16px; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">Datura <span>Labs</span></a>
+    <a href="/#writing" class="nav-back">← All writing</a>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-eyebrow">
+      <!-- Replace with: Topic · Category · Theme -->
+      <span class="article-tag">[TOPIC · CATEGORY · THEME]</span>
+      <div class="article-tag-sep"></div>
+      <!-- Format: Month YYYY -->
+      <span class="article-date">[Month YYYY]</span>
+    </div>
+
+    <h1 class="article-title">[ESSAY TITLE]</h1>
+
+    <p class="article-dek">
+      [1-2 sentences. This is the hook. Make it specific, true, and worth reading.
+      It appears under the headline and is the first thing that earns the click.]
+    </p>
+
+    <div class="article-meta">
+      <div class="article-author">By <strong>VK Singh Vashisht</strong></div>
+      <div class="article-read">[N] min read</div>
+    </div>
+  </header>
+
+  <main>
+  <div class="article-body">
+
+    <article class="prose" itemscope itemtype="https://schema.org/Article">
+      <meta itemprop="headline" content="[ESSAY TITLE]">
+      <meta itemprop="author" content="VK Singh Vashisht">
+      <meta itemprop="datePublished" content="[YYYY-MM-DD]">
+
+      <!--
+        PROSE GUIDANCE:
+        
+        Opening paragraph: No preamble. Start with the real thing.
+        Not "In this essay I will explore..." — just the real thing.
+        
+        Voice: Direct. Specific. No hedging. Use "I" without apology.
+        Write the way you talk in a room where you respect the people.
+        
+        Structure:
+        - Opening: the real thing, stated
+        - H2 sections: each section advances the argument or story
+        - Blockquote: the one sentence that is the whole essay
+        - Closing: what this means, what you did, what the reader can do
+        
+        Length: Write what it needs. Cut everything it doesn't.
+      -->
+
+      <p>
+        [Opening paragraph — no preamble, start with the thing itself]
+      </p>
+
+      <p>
+        [Second paragraph]
+      </p>
+
+      <h2>[Section Title]</h2>
+
+      <p>
+        [Section content]
+      </p>
+
+      <blockquote>
+        <p>[The one sentence that is the whole essay]</p>
+      </blockquote>
+
+      <h2>[Section Title]</h2>
+
+      <p>
+        [Section content]
+      </p>
+
+      <h2>[Closing section — what it means]</h2>
+
+      <p>
+        [Closing paragraph]
+      </p>
+
+      <!-- AUTHOR BIO — do not change this -->
+      <div class="author-bio">
+        VK Singh Vashisht is the founder of Datura Labs LLC, a family office and venture studio based in Los Angeles. He writes on distressed capital, AI infrastructure, and investment frameworks at daturalabs.com. Questions: <a href="mailto:vk@daturalabs.com">vk@daturalabs.com</a>
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR — update section links and related reading -->
+    <aside class="article-sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-label">In This Essay</div>
+        <!-- Add one link per H2 section -->
+        <a href="#" class="sidebar-link">
+          <span>Section 01</span>[First H2 title]
+        </a>
+        <a href="#" class="sidebar-link">
+          <span>Section 02</span>[Second H2 title]
+        </a>
+        <a href="#" class="sidebar-link">
+          <span>Section 03</span>[Third H2 title]
+        </a>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Related Reading</div>
+        <!-- Link 2-3 related essays -->
+        <a href="/writing/[RELATED-SLUG].html" class="sidebar-link">
+          <span>[Category]</span>[Related essay title]
+        </a>
+        <a href="/writing/[RELATED-SLUG].html" class="sidebar-link">
+          <span>[Category]</span>[Related essay title]
+        </a>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Contact</div>
+        <p style="font-size: 13px; color: var(--text-faint); line-height: 1.6; margin-bottom: 12px;">
+          [Optional: 1 sentence about why someone would email after reading this specific essay]
+        </p>
+        <a href="mailto:vk@daturalabs.com" style="font-family: var(--tenor); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-dim); padding-bottom: 2px;">
+          vk@daturalabs.com
+        </a>
+      </div>
+    </aside>
+
+  </div>
+  </main>
+
+  <footer>
+    <div class="footer-logo">Datura <span>Labs</span> — Los Angeles</div>
+    <div class="footer-note">© 2026 VK Singh Vashisht · <a href="/" style="color: inherit; text-decoration: none;">daturalabs.com</a></div>
+  </footer>
+
+</body>
+</html>
