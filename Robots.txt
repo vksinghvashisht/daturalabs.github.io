@@ -1,0 +1,95 @@
+# daturalabs.com — robots.txt
+
+# Last updated: 2026-02-27
+
+# Contact: vk@daturalabs.com
+
+# ── DEFAULT ─────────────────────────────────────────────────
+
+User-agent: *
+Allow: /
+Disallow: /private/
+
+# ── GOOGLE ──────────────────────────────────────────────────
+
+User-agent: Googlebot
+Allow: /
+
+# Allow Google to use content for AI Overviews and Gemini
+
+User-agent: Google-Extended
+Allow: /
+
+# ── PERPLEXITY ──────────────────────────────────────────────
+
+User-agent: PerplexityBot
+Allow: /
+
+# User-triggered Perplexity fetch (e.g. “summarize this URL”)
+
+User-agent: Perplexity-User
+Allow: /
+
+# ── OPENAI / CHATGPT ────────────────────────────────────────
+
+# Search citations in ChatGPT
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# User-triggered ChatGPT browsing
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Model training (GPT-4o, GPT-5 etc.) — allow for visibility
+
+User-agent: GPTBot
+Allow: /
+
+# ── ANTHROPIC / CLAUDE ──────────────────────────────────────
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# ── APPLE ───────────────────────────────────────────────────
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ── MICROSOFT / BING / COPILOT ──────────────────────────────
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# ── OTHER AI SEARCH ENGINES ─────────────────────────────────
+
+User-agent: YouBot
+Allow: /
+
+User-agent: PhindBot
+Allow: /
+
+User-agent: ExaBot
+Allow: /
+
+# ── COMMON CRAWL (feeds many LLMs) ──────────────────────────
+
+User-agent: CCBot
+Allow: /
+
+# ── SITEMAP ─────────────────────────────────────────────────
+
+Sitemap: https://daturalabs.com/sitemap.xml
