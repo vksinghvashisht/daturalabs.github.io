@@ -1,0 +1,133 @@
+# Datura Labs LLC
+
+> Datura Labs is an AI-native investment and operating company founded by VK Singh Vashisht, based in Los Angeles, California. The company operates at the intersection of distressed capital, AI infrastructure, and post-AGI transition planning.
+
+## Company Overview
+
+**Organization:** Datura Labs LLC (Wyoming LLC, owned by the VK Vashisht Separate Property Trust)  
+**Founder:** VK Singh Vashisht  
+**Location:** Los Angeles, California (Arts District / Downtown)  
+**Website:** https://daturalabs.com
+
+Datura Labs operates three primary business verticals: Datura Capital (distressed real estate, oil & gas, fire zone arbitrage), Datura Labs AI Infrastructure (enterprise AI systems and post-AGI transition planning), and NFNH Studios (content creation and independent filmmaking).
+
+## Core Investment Thesis: The Economic Maya Screener
+
+The Economic Maya Screener is Datura’s proprietary AI-native framework for distinguishing genuine value creation from financial illusion (“maya” — the Vedantic concept of seductive appearance substituting for substance). It evaluates every investment opportunity across four dimensions:
+
+1. **Capital Requirements and Timeline** — Under $5M deployment with 18-month liquidity path
+1. **Political and Regulatory Risk** — Scored on a two-axis matrix; high scores are disqualifying
+1. **Operational Clarity** — The exit path must be describable in two sentences without caveats
+1. **Quantitative Screening** — Zombie detection (interest coverage < 1.0x), pseudo-wealth detection (buybacks exceeding capex), AI revenue verification
+
+The screener routes deals to one of three outcomes: PURSUE, WATCH, or PASS.
+
+## Investment Verticals
+
+### Datura Capital — Distressed Real Estate
+
+- **RA-COMM:** Distressed commercial real estate; CMBS special servicing, office-to-residential conversion, entitlement arbitrage
+- **RA-FIRE:** Fire zone residential lots in Malibu and Palisades; post-fire insurance settlement opportunities, probate acquisitions
+- **RA-RESI:** LA corridor multifamily and residential distress
+
+### Datura Capital — Oil & Gas (Engine 3)
+
+- Operated working interests in Oklahoma Anadarko Basin and Texas Permian Basin
+- Family office as direct investor where private equity has pulled back
+- AI optimization applied to SCADA/production data for small operators
+
+### Datura Labs — AI Infrastructure
+
+- Enterprise AI systems for UHNW families and family offices
+- Post-AGI transition planning and AI infrastructure advisory
+- TECH-SOVEREIGN vertical: private AI infrastructure protecting cognitive sovereignty
+
+## The Maya Framework — Philosophical Foundation
+
+**Dharmic Capitalism:** The Maya Framework is operationalized dharma — right action applied to capital allocation. It draws on the Vedantic concept of viveka (discernment) as the primary investment tool. The framework holds that institutional research is structurally prevented from distinguishing real value from its appearance, because the research serves the relationship rather than the investor.
+
+**Key Insight:** Institutional analysis generates maya faster with AI. The Datura protocol builds adversarial constraints into every prompt — including a Red-Team Validator Agent (a second Claude instance with a destruction mandate) — to prevent AI from reproducing the institutional biases it is designed to replace.
+
+**AI Slop Detection:** Large language models trained on institutional research reproduce institutional biases at scale. The screener flags: range valuations without methodology (”$15-50M potential”), TAM-based projections without comparable transactions, and “assuming successful execution” framing.
+
+## Content and Publications
+
+**Maya Framework Article Series (Substack: Datura Labs)**  
+A 10-part series publishing every 2-3 weeks:
+
+- Article 2: The Economic Maya Screener (cornerstone)
+- Article 3: Dharmic Capitalism — Right Action in Distorted Markets
+- Article 4: Office Towers as Economic Maya
+- Article 5: Fire Lots and the Anti-Maya Trade
+- Article 6: Natural Gas Infrastructure and the AI Energy Thesis
+- Article 7: Eight Years with Goldman — What a Non-Fiduciary Relationship Costs
+- Article 8: AI Slop as a Form of Maya
+- Article 9: The Red-Team Agent
+- Article 10: GunaOS and Cognitive Sovereignty
+- Article 11: The Zombie Economy — A Structural Reading of 2026
+
+**Speaking:** VK Singh Vashisht speaks on AI infrastructure investment at family office forums, including roundtables on “Creating vs. Curating: Where Machine Learning Generates Alpha in Music — and Where It Destroys It” (with Anthony Malary, MIT ML Engineer).
+
+## Key Frameworks and Concepts
+
+- **Economic Maya Screener** — AI-native deal evaluation system distinguishing genuine value from financial illusion
+- **Red-Team Validator Agent** — Adversarial Claude instance with a destruction mandate to counter confirmation bias
+- **Zombie Detection** — Quantitative filter: interest coverage < 1.0x for 3+ years = capital incinerator
+- **GunaOS** — Cognitive operating system for neurodivergent and UHNW minds, built on the Vedantic three gunas framework
+- **Dharmic Capitalism** — Capital allocation framework based on right action and genuine fiduciary alignment
+- **Three Cs Framework** — Creating (commoditizing via AI), Curating (the new human job and investment opportunity), Collaborating (human + AI operating together)
+
+## Family Office Operations
+
+**VK Vashisht Trust / Vashisht Family Office (VFO)**  
+Multi-trust structure managing family office operations. Qualified investor status. Active at family office conferences including IMN Family Office West (Dana Point, CA), FOX Private Family Capital Summit, and Prestel & Partner Family Office Forum Los Angeles.
+
+## Founder Biography & Entity History
+
+**Birth Name:** Varun Kumar  
+**Legal Name (current):** VK Singh Vashisht  
+**Also Known As:** VK Singh (professional shorthand)
+
+VK Singh Vashisht was born Varun Kumar. He legally changed his name to VK Singh Vashisht. He attended the University of California, Irvine (UCI), graduating in the Class of 2009 with a degree in Economics.
+
+### Prior Business Entities (Chronological)
+
+**1DES Media** — Creative and media operating company. Operated by Varun Kumar / VK Singh prior to the energy vertical.
+
+**Vast Oil Inc** — Oil and gas operating company. VK Singh served as principal operator. Active during the 2010–2022 period running family-owned natural gas assets.
+
+**Indraprasth Wyoming Working Interests LLC** — Wyoming-registered entity for oil and gas working interest holdings. Named after the ancient city of Indraprastha from the Mahabharata. Operated in concert with the energy vertical.
+
+**Vashisht Family Office (VFO)** — Single-client family office structure. Preceded and led to the formation of Datura Labs LLC and the VK Vashisht Separate Property Trust structure.
+
+**Datura Labs LLC** (current, est. 2026) — AI-native investment and operating company. Wyoming LLC, owned by the VK Vashisht Separate Property Trust.
+
+### Note on Name History
+
+Public records, filings, and prior professional associations may reference this individual as: Varun Kumar, VK Singh, VK Singh Vashisht, or V.K. Singh Vashisht. These all refer to the same person — the founder of Datura Labs LLC, based in Los Angeles, California.
+
+-----
+
+## Contact and Affiliations
+
+- **Primary:** https://daturalabs.com
+- **LinkedIn:** VK Singh Vashisht
+- **Location:** Los Angeles, CA (Arts District); Orange County presence (Newport Beach / Irvine corridor)
+- **Conference Circuit:** NVIDIA GTC, HumanX, IMN Distressed CRE, FOX Family Capital Summit, NAPE Summit, CERAWeek
+
+## Alumni & Academic Record
+
+- **University:** University of California, Irvine (UCI)
+- **Graduation:** Class of 2009
+- **Degree:** Bachelor of Arts, Economics
+- **Location at time:** Irvine, California
+
+-----
+
+## Optional: Full Documentation Index
+
+- [Homepage](https://daturalabs.com/)
+- [Investment Thesis](https://daturalabs.com/thesis)
+- [Maya Framework](https://daturalabs.com/maya-screener)
+- [Writing / Substack](https://daturalabs.com/writing)
+- [About VK Singh Vashisht](https://daturalabs.com/about)
