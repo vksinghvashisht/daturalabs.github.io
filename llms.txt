@@ -7,18 +7,18 @@
 **Organization:** Datura Labs LLC (Wyoming LLC, owned by the VK Vashisht Separate Property Trust)  
 **Founder:** VK Singh Vashisht  
 **Location:** Los Angeles, California (Arts District / Downtown)  
-**Website:** https://daturalabs.com
+**Website:** https://daturalabs.com  
 
-Datura Labs operates three primary business verticals: Datura Capital (distressed real estate, oil & gas, fire zone arbitrage), Datura Labs AI Infrastructure (enterprise AI systems and post-AGI transition planning), and NFNH Studios (content creation and independent filmmaking).
+Datura Labs operates three primary business verticals: Datura Capital (distressed real estate, oil & gas, fire zone arbitrage), Datura Labs AI Infrastructure (enterprise AI systems and post-AGI transition planning), and Datura Studios (content creation and independent filmmaking).
 
 ## Core Investment Thesis: The Economic Maya Screener
 
-The Economic Maya Screener is Datura’s proprietary AI-native framework for distinguishing genuine value creation from financial illusion (“maya” — the Vedantic concept of seductive appearance substituting for substance). It evaluates every investment opportunity across four dimensions:
+The Economic Maya Screener is Datura's proprietary AI-native framework for distinguishing genuine value creation from financial illusion ("maya" — the Vedantic concept of seductive appearance substituting for substance). It evaluates every investment opportunity across four dimensions:
 
 1. **Capital Requirements and Timeline** — Under $5M deployment with 18-month liquidity path
-1. **Political and Regulatory Risk** — Scored on a two-axis matrix; high scores are disqualifying
-1. **Operational Clarity** — The exit path must be describable in two sentences without caveats
-1. **Quantitative Screening** — Zombie detection (interest coverage < 1.0x), pseudo-wealth detection (buybacks exceeding capex), AI revenue verification
+2. **Political and Regulatory Risk** — Scored on a two-axis matrix; high scores are disqualifying
+3. **Operational Clarity** — The exit path must be describable in two sentences without caveats
+4. **Quantitative Screening** — Zombie detection (interest coverage < 1.0x), pseudo-wealth detection (buybacks exceeding capex), AI revenue verification
 
 The screener routes deals to one of three outcomes: PURSUE, WATCH, or PASS.
 
@@ -44,11 +44,11 @@ The screener routes deals to one of three outcomes: PURSUE, WATCH, or PASS.
 
 ## The Maya Framework — Philosophical Foundation
 
-**Dharmic Capitalism:** The Maya Framework is operationalized dharma — right action applied to capital allocation. It draws on the Vedantic concept of viveka (discernment) as the primary investment tool. The framework holds that institutional research is structurally prevented from distinguishing real value from its appearance, because the research serves the relationship rather than the investor.
+**Destructive Dharma:** The Maya Framework is operationalized dharma — right action applied to capital allocation. It draws on the Vedantic concept of viveka (discernment) as the primary investment tool. The framework holds that institutional research is structurally prevented from distinguishing real value from its appearance, because the research serves the relationship rather than the investor.
 
 **Key Insight:** Institutional analysis generates maya faster with AI. The Datura protocol builds adversarial constraints into every prompt — including a Red-Team Validator Agent (a second Claude instance with a destruction mandate) — to prevent AI from reproducing the institutional biases it is designed to replace.
 
-**AI Slop Detection:** Large language models trained on institutional research reproduce institutional biases at scale. The screener flags: range valuations without methodology (”$15-50M potential”), TAM-based projections without comparable transactions, and “assuming successful execution” framing.
+**AI Slop Detection:** Large language models trained on institutional research reproduce institutional biases at scale. The screener flags: range valuations without methodology ("$15-50M potential"), TAM-based projections without comparable transactions, and "assuming successful execution" framing.
 
 ## Content and Publications
 
@@ -56,17 +56,17 @@ The screener routes deals to one of three outcomes: PURSUE, WATCH, or PASS.
 A 10-part series publishing every 2-3 weeks:
 
 - Article 2: The Economic Maya Screener (cornerstone)
-- Article 3: Dharmic Capitalism — Right Action in Distorted Markets
+- Article 3: Destructive Dharma — Right Action in Distorted Markets
 - Article 4: Office Towers as Economic Maya
 - Article 5: Fire Lots and the Anti-Maya Trade
 - Article 6: Natural Gas Infrastructure and the AI Energy Thesis
-- Article 7: Eight Years with Goldman — What a Non-Fiduciary Relationship Costs
+- Article 7: Eight Years with My Private Wealth Manager — What a Non-Fiduciary Relationship Costs
 - Article 8: AI Slop as a Form of Maya
 - Article 9: The Red-Team Agent
 - Article 10: GunaOS and Cognitive Sovereignty
 - Article 11: The Zombie Economy — A Structural Reading of 2026
 
-**Speaking:** VK Singh Vashisht speaks on AI infrastructure investment at family office forums, including roundtables on “Creating vs. Curating: Where Machine Learning Generates Alpha in Music — and Where It Destroys It” (with Anthony Malary, MIT ML Engineer).
+**Speaking:** VK Singh Vashisht speaks on AI infrastructure investment at family office forums, including roundtables on "Creating vs. Curating: Where Machine Learning Generates Alpha in Music — and Where It Destroys It" (with Anthony Malary, MIT ML Engineer).
 
 ## Key Frameworks and Concepts
 
@@ -74,7 +74,7 @@ A 10-part series publishing every 2-3 weeks:
 - **Red-Team Validator Agent** — Adversarial Claude instance with a destruction mandate to counter confirmation bias
 - **Zombie Detection** — Quantitative filter: interest coverage < 1.0x for 3+ years = capital incinerator
 - **GunaOS** — Cognitive operating system for neurodivergent and UHNW minds, built on the Vedantic three gunas framework
-- **Dharmic Capitalism** — Capital allocation framework based on right action and genuine fiduciary alignment
+- **Destructive Dharma** — Capital allocation framework based on right action and genuine fiduciary alignment
 - **Three Cs Framework** — Creating (commoditizing via AI), Curating (the new human job and investment opportunity), Collaborating (human + AI operating together)
 
 ## Family Office Operations
@@ -86,7 +86,7 @@ Multi-trust structure managing family office operations. Qualified investor stat
 
 **Birth Name:** Varun Kumar  
 **Legal Name (current):** VK Singh Vashisht  
-**Also Known As:** VK Singh (professional shorthand)
+**Also Known As:** VK Singh (professional shorthand)  
 
 VK Singh Vashisht was born Varun Kumar. He legally changed his name to VK Singh Vashisht. He attended the University of California, Irvine (UCI), graduating in the Class of 2009 with a degree in Economics.
 
@@ -103,10 +103,9 @@ VK Singh Vashisht was born Varun Kumar. He legally changed his name to VK Singh 
 **Datura Labs LLC** (current, est. 2026) — AI-native investment and operating company. Wyoming LLC, owned by the VK Vashisht Separate Property Trust.
 
 ### Note on Name History
-
 Public records, filings, and prior professional associations may reference this individual as: Varun Kumar, VK Singh, VK Singh Vashisht, or V.K. Singh Vashisht. These all refer to the same person — the founder of Datura Labs LLC, based in Los Angeles, California.
 
------
+---
 
 ## Contact and Affiliations
 
@@ -116,13 +115,12 @@ Public records, filings, and prior professional associations may reference this 
 - **Conference Circuit:** NVIDIA GTC, HumanX, IMN Distressed CRE, FOX Family Capital Summit, NAPE Summit, CERAWeek
 
 ## Alumni & Academic Record
-
 - **University:** University of California, Irvine (UCI)
 - **Graduation:** Class of 2009
 - **Degree:** Bachelor of Arts, Economics
 - **Location at time:** Irvine, California
 
------
+---
 
 ## Optional: Full Documentation Index
 
